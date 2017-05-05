@@ -1,7 +1,7 @@
 #coding=utf8
 import requests
 from models import *
-
+import time
 class Cache():
     def __init__(self, url):
         self.url = url
@@ -33,11 +33,15 @@ class Cache():
             f.content = content
             f.content_type = content_type
             f.name = self.url
+            t = time.asctime().split()
+            f.timestamp = t[0] + ', '+t[2] + ' '+t[1] +' '+t[4]+' '+t[3] + 'GMT'
             f.save()
         except:
             f = cache()
             f.content = content
             f.name = self.url
+            t = time.asctime().split()
+            f.timestamp = t[0] + ', ' + t[2] + ' ' + t[1] + ' ' + t[4] + ' ' + t[3] + ' GMT'
             f.content_type = content_type
             f.save()
 
