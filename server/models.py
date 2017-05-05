@@ -16,6 +16,7 @@ class firewall(models.Model):
 
 
 class cache(models.Model):
+    #缓存表
     timestamp = models.CharField(max_length=80) #时间戳
     name = models.CharField(max_length=150) #文件名对应的url
     content_type = models.CharField(max_length=50)  #内容类型

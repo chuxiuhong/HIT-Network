@@ -7,5 +7,11 @@
       <introspection-scope>http_proxy:</introspection-scope>
       <resolve-scope>http_proxy:</resolve-scope>
     </data-source>
+    <data-source name="MySQL - company@localhost" uuid="0c31fa30-3647-47d0-882b-4f29f4a812c4">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-scope>company:</introspection-scope>
+      <resolve-scope>company:</resolve-scope>
+    </data-source>
   </component>
 </project>

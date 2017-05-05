@@ -419,4 +419,35 @@ model</columns>
       </key>
     </database-model>
   </data-source>
+  <data-source name="MySQL - company@localhost" uuid="0c31fa30-3647-47d0-882b-4f29f4a812c4">
+    <database-info product="MySQL" version="5.6.32" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="company">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="beginman"/>
+      <schema id="3" name="bookdb"/>
+      <schema id="4" name="coder_market"/>
+      <schema id="5" name="fingerprint"/>
+      <schema id="6" name="haha"/>
+      <schema id="7" name="http_proxy"/>
+      <schema id="8" name="information_schema"/>
+      <schema id="9" name="kdd"/>
+      <schema id="10" name="keytrace"/>
+      <schema id="11" name="myear"/>
+      <schema id="12" name="mysql"/>
+      <schema id="13" name="peoplepress"/>
+      <schema id="14" name="performance_schema"/>
+      <schema id="15" name="pushnews"/>
+      <schema id="16" name="test"/>
+      <schema id="17" name="test1"/>
+      <schema id="18" name="villa"/>
+      <schema id="19" name="vp"/>
+      <schema id="20" name="webpractice"/>
+    </database-model>
+  </data-source>
 </component>
