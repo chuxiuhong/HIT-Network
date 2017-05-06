@@ -26,7 +26,7 @@ class cache(models.Model):
 def check_if_replace(user_ip, host):
     user_list = firewall.objects.filter(user_ip=user_ip).all()  #先到黑名单中查找
     for user in user_list:
-        if user.forbidden_host in host:
+        if user.forbidden_host in host or host == '*':
             return (1, '<h1>You have been forbidden!</h1>') #返回禁止页
     general = firewall.objects.filter(user_ip='*').all()
     for i in general:
